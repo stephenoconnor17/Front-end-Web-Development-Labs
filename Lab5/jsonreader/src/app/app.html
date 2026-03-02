@@ -1,0 +1,18 @@
+<h1>Student App</h1>
+
+<ol>
+<!--BASICALLY A ENHANCED FOR LOOP-->
+@for(student of students; track student){
+  <li>Student : {{student.name}}, {{student.age}}, {{student.address}}, {{student.course}}, {{student.id}}</li>
+}
+</ol>
+
+<h1>Weather in Galway</h1>
+<ul>
+  @for(weatherE of weatherElements; track weatherE){
+    <li>{{weatherE.main}}, {{weatherE.description}}</li>
+  }
+  <!--IT SEEMS ANGULAR IS BROKEN
+  ONCE ON SERVE, HTML CAN DISAPPEAR,
+  JUST TYPE SOME RANDOM THING AND SAVE AND ITLL THEN SHOW PROPERLY.-->
+</ul>
