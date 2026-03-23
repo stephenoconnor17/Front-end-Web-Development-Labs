@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+//loadComponent lazy loads each page, only loading when navigated to
 export const routes: Routes = [
   {
     path: 'home',

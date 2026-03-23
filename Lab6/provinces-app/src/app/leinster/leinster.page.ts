@@ -13,13 +13,13 @@ import { Router } from '@angular/router';
 })
 export class LeinsterPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router) { } //inject router for programmatic navigation
 
   ngOnInit() {
   }
 
   onButtonClick(){
-    this.router.navigate(['/leinster-counties']);
+    this.router.navigate(['/leinster-counties']); //navigates to route defined in app.routes.ts
   }
 
 
