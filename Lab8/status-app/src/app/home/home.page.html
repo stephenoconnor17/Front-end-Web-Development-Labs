@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Status
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--
+TAB WITH ANGULAR INTELLISENSE TO MAKE IT IMPORT INTO THE TS FILES
+-->
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-label>Your Status is: {{status}}</ion-label>
+  <br>
+  <ion-button [routerLink]="['/status-page']">Update Status</ion-button>
+</ion-content>
